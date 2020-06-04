@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@mozilla-protocol/core/protocol/css/protocol.scss",
+              "node_modules/@mozilla-protocol/core/protocol/css/protocol-extra.scss"
             ],
             "scripts": []
           },
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "postbacc-website"
+    }
+  },
+  "defaultProject": "postbacc-website",
+  "cli": {
+    "analytics": false
+  }
 }
