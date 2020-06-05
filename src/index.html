@@ -6,9 +6,26 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script type="text/javascript" src="assets/scripts/protocol-base.js"></script>
-  <script type="text/javascript" src="assets/scripts/protocol-utils.js"></script>
-  <script type="text/javascript" src="assets/scripts/protocol-supports.js"></script>
+  <script type="text/javascript" src="./assets/scripts/protocol-base.js"></script>
+  <script type="text/javascript" src="./assets/scripts/protocol-utils.js"></script>
+  <script type="text/javascript" src="./assets/scripts/protocol-supports.js"></script>
+  <script type="text/javascript" src="./assets/scripts/protocol-menu.js"></script>
+  <script type="text/javascript" src="./assets/scripts/protocol-navigation.js"></script>
+  <script>
+    Mzp.Menu.init({
+      onMenuOpen: function () {
+        console.log("Menu opened");
+      },
+      onMenuClose: function () {
+        console.log("Menu closed");
+      },
+      onMenuButtonClose: function () {
+        console.log("Menu close button clicked");
+      },
+    });
+
+    Mzp.Navigation.init();
+  </script>
 </head>
 <body>
   <app-root></app-root>
